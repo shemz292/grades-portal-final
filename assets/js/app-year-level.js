@@ -13,7 +13,7 @@ $(function () {
         config.colors)
   ).headingColor;
   var t,
-    n = $(".datatables-products"),
+    n = $(".datatables-yearLevel"),
     i = {
       1: { title: "Scheduled", class: "bg-label-warning" },
       2: { title: "Publish", class: "bg-label-success" },
@@ -201,7 +201,7 @@ $(function () {
       language: {
         sLengthMenu: "_MENU_",
         search: "",
-        searchPlaceholder: "Search Program",
+        searchPlaceholder: "Search Year Level",
         info: "Displaying _START_ to _END_ of _TOTAL_ entries",
       },
       buttons: [
@@ -330,7 +330,7 @@ $(function () {
           ],
         },
         {
-          text: '<i class="ti ti-plus me-0 me-sm-1 ti-xs"></i><span class="d-none d-sm-inline-block">Add Program</span>',
+          text: '<i class="ti ti-plus me-0 me-sm-1 ti-xs"></i><span class="d-none d-sm-inline-block">Add Year Level</span>',
           className:
             "add-new btn btn-success ms-2 ms-sm-0 waves-effect waves-light",
           action: function () {
@@ -339,7 +339,7 @@ $(function () {
           init: function(api, node, config) {
             // Add data attributes to the button
             $(node).attr('data-bs-toggle', 'modal');
-            $(node).attr('data-bs-target', '#addProgram');
+            $(node).attr('data-bs-target', '#addYearLevel');
           }
         },
       ],
