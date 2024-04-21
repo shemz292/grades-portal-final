@@ -457,7 +457,6 @@ class View
         </footer>
 <?php
     }
-    
     public function studentOverview(){
 ?>
     <!-- Student Overview -->
