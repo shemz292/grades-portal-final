@@ -457,55 +457,7 @@ class View
         </footer>
 <?php
     }
-    public function compose()
-    {
-?>
-        <!-- Layout wrapper -->
-        <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
-            <div class="layout-container">
-                <!-- Header -->
-                <?php $this->header($this->data); ?>
-                <!-- / Header -->
-
-                <!-- Layout container -->
-                <div class="layout-page">
-                    <!-- Content wrapper -->
-                    <div class="content-wrapper">
-                        <!-- Navbar -->
-                        <?php $this->navbar($this->data); ?>
-                        <!-- / Navbar -->
-
-                            <!-- Content -->
-                                    <?php $this->dashboardContent($this->data); ?>
-                            <!--/ Content -->
-                        <!-- Footer -->
-                        <?php $this->footer();  ?>
-                        <!-- / Footer -->
-
-                        <div class="content-backdrop fade"></div>
-                    </div>
-                    <!--/ Content wrapper -->
-                </div>
-
-                <!--/ Layout container -->
-            </div>
-        </div>
-
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
-
-        <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-        <div class="drag-target"></div>
-
-        <!--/ Layout wrapper -->
-
-        <div class="buy-now">
-            <a href="#" class="btn btn-danger btn-buy-now">
-                <i class="ti ti-headset ti-sm"></i>
-            </a>
-        </div>
-<?php
-    }
+    
     public function studentOverview(){
 ?>
     <!-- Student Overview -->
@@ -727,17 +679,59 @@ class View
 
     public function dashboardContent()
     {
-?>     
-        <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row">
-                <?php
-                    $this->studentOverview($this->data);
-                    $this->studentGradeOverview($this->data);
-                    $this->totalSubmittedGrades($this->data);
-                    $this->totalProgramsOffered($this->data);
-                ?>
+?>     <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div class="layout-container">
+            <!-- Header -->
+            <?php $this->header($this->data); ?>
+            <!-- / Header -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Navbar -->
+                    <?php $this->navbar($this->data); ?>
+                    <!-- / Navbar -->
+
+                        <!-- Content -->
+                        <div class="container-xxl flex-grow-1 container-p-y">
+                            <div class="row">
+                                <?php
+                                    $this->studentOverview($this->data);
+                                    $this->studentGradeOverview($this->data);
+                                    $this->totalSubmittedGrades($this->data);
+                                    $this->totalProgramsOffered($this->data);
+                                ?>
+                            </div>
+                        </div>
+                        <!--/ Content -->
+                            <!-- Footer -->
+                            <?php $this->footer();  ?>
+                            <!-- / Footer -->
+
+                            <div class="content-backdrop fade"></div>
+                        </div>
+                        <!--/ Content wrapper -->
+                    </div>
+
+                    <!--/ Layout container -->
+                </div>
             </div>
-         </div>
+
+            <!-- Overlay -->
+            <div class="layout-overlay layout-menu-toggle"></div>
+
+            <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+            <div class="drag-target"></div>
+
+            <!--/ Layout wrapper -->
+
+            <div class="buy-now">
+                <a href="#" class="btn btn-danger btn-buy-now">
+                    <i class="ti ti-headset ti-sm"></i>
+                </a>
+            </div>
 <?php
     }
 
