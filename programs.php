@@ -57,6 +57,7 @@
                     <!-- Navbar -->
                     <?php require "includes/navbar.php";  ?>
                     <!-- / Navbar -->
+                    
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <h5 class="py-2 mb-4">
