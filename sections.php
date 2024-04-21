@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="dark-style layout-compact layout-menu-fixed" data-theme="theme-default" data-template="horizontal-menu-template">
+<html lang="en" class="light-style layout-compact layout-menu-fixed" data-theme="theme-default" data-template="horizontal-menu-template">
 
 <head>
     <meta charset="utf-8" />
